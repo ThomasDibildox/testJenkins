@@ -4,6 +4,8 @@ pipeline {
         stage('Build') {
             steps { 
                 composer install
+			}
+		}
         stage('myStage'){
             steps {
                 bat 'dir'
