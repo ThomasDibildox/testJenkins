@@ -3,13 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps { 
-                bat 'dir'
+                bat 'composer install'
 			}
 		}
-        stage('myStage'){
-            steps {
-                bat 'dir'
-            }
-        }
-    }
+	}
 }
